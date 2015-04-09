@@ -1,3 +1,15 @@
+/!\ Warning /!\
+===============
+
+This package is not registered not stored on PyPi.
+All the following content is just **template** content.
+
+
+
+
+
+
+
 django-cs-models
 ================
 
