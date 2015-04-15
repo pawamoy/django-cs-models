@@ -17,7 +17,6 @@ setup(
     author='Timothée Mazzucotelli',
     author_email='timothee.mazzucotelli@gmail.com',
     url='https://github.com/Pawamoy/django-cs-models',
-    # download_url = 'https://github.com/Pawamoy/django-cs-models/tarball/0.0.1',
 
     install_requires=['future'],
 
