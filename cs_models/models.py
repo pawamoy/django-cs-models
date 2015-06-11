@@ -1,11 +1,9 @@
 # -*- coding: utf-8 -*-
-
 """This module contains functions for creating and returning abstract models
 based on the project settings. These abstract models will be linked
 between them with ManyToMany fields, from the leaves to the roots.
 """
 
-# Framework imports
 from django.db import models
 from django.db.models.loading import get_model
 from django.conf import settings
@@ -19,7 +17,8 @@ abstract_models_data = {}
 
 def process():
     if not (COMPLEX_STRUCTURE or COMPLEX_APP_NAME):
-        return
+        raise ValueError(
+            'COMPLEX_STRUCTURE or COMPLEX_APP_NAME is not set.')
     for root in COMPLEX_STRUCTURE['roots']:
         for entity in root:
             class Meta:
@@ -72,7 +71,8 @@ def abstract_model(entity_name):
             )
             return abstract_models[entity_name]
         else:
-            return None
+            raise ValueError(
+                'COMPLEX_STRUCTURE does not contain "%s"' % entity_name)
     else:
         return installed_model
 
