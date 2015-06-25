@@ -5,7 +5,10 @@ between them with ManyToMany fields, from the leaves to the roots.
 """
 
 from django.db import models
-from django.db.models.loading import get_model
+try:
+    from django.apps import apps
+except ImportError:
+    from django.db.models import loading as apps
 from django.conf import settings
 
 COMPLEX_STRUCTURE = getattr(settings, "COMPLEX_STRUCTURE", None)
@@ -44,7 +47,7 @@ def process():
                     for root_entity in root:
                         attrs[root_entity.lower()] = models.ManyToManyField(
                             root_entity, related_name=entity.lower(),
-                            verbose_name=root_entity, blank=True, null=True
+                            verbose_name=root_entity, blank=True
                         )
                 # then add above nodes
                 for above_nodes in COMPLEX_STRUCTURE['nodes'][:countl]:
@@ -53,7 +56,7 @@ def process():
                             attrs[
                                 node_entity.lower()] = models.ManyToManyField(
                                 node_entity, related_name=entity.lower(),
-                                verbose_name=node_entity, blank=True, null=True
+                                verbose_name=node_entity, blank=True
                             )
                 abstract_models_data[entity] = ['cs_' + entity, attrs]
         countl += 1
@@ -80,4 +83,4 @@ def abstract_model(entity_name):
 def concrete_model(entity_name):
     if len(abstract_models_data) == 0:
         process()
-    return get_model(COMPLEX_APP_NAME, entity_name)
+    return apps.get_model(COMPLEX_APP_NAME, entity_name)
