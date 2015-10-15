@@ -84,6 +84,8 @@ These levels will tell if such entity can be contained by such other entity.
 First diagram shows the example above.
 Second diagram shows how links are created between entity depending on their type (root or node) and their level. Letters (their names) are not important, but numbers (their levels) are.
 
-![example_diagram](http://i.imgur.com/a2dGa9V.png)
+.. image:: http://i.imgur.com/a2dGa9V.png
+    :alt: Example diagram
 
-![abstract_diagram](http://i.imgur.com/apJNGpe.png)
+.. image:: http://i.imgur.com/apJNGpe.png
+    :alt: Abstract diagram
