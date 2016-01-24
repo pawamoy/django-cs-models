@@ -70,7 +70,7 @@ def abstract_model(entity_name):
         model = abstract_models_data.get(entity_name)
         if model:
             abstract_models[entity_name] = type(
-                model[0], (models.Model,), model[1]
+                str(model[0]), (models.Model,), model[1]
             )
             return abstract_models[entity_name]
         else:
