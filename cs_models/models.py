@@ -11,8 +11,8 @@ except ImportError:
     from django.db.models import loading as apps
 from django.conf import settings
 
-COMPLEX_STRUCTURE = getattr(settings, "COMPLEX_STRUCTURE", None)
-COMPLEX_APP_NAME = getattr(settings, "COMPLEX_APP_NAME", None)
+COMPLEX_STRUCTURE = getattr(settings, 'COMPLEX_STRUCTURE', None)
+COMPLEX_APP_NAME = getattr(settings, 'COMPLEX_APP_NAME', None)
 
 abstract_models = {}
 abstract_models_data = {}
@@ -24,42 +24,34 @@ def process():
             'COMPLEX_STRUCTURE or COMPLEX_APP_NAME is not set.')
     for root in COMPLEX_STRUCTURE['roots']:
         for entity in root:
-            class Meta:
+            class Meta(object):
                 app_label = COMPLEX_APP_NAME
                 abstract = True
 
             attrs = {'Meta': Meta, '__module__': COMPLEX_APP_NAME + '.models'}
             abstract_models_data[entity] = ['cs_' + entity, attrs]
 
-    countl = 0
-    for nodes in COMPLEX_STRUCTURE['nodes']:
-        for node in nodes:
-            for entity in node:
-                # first add module and meta class
-                class Meta:
-                    app_label = COMPLEX_APP_NAME
-                    abstract = True
+    for i, nodes in enumerate(COMPLEX_STRUCTURE['nodes']):
+        for entity in nodes:
+            # First add module and meta class
+            class Meta(object):
+                app_label = COMPLEX_APP_NAME
+                abstract = True
 
-                attrs = {'Meta': Meta,
-                         '__module__': COMPLEX_APP_NAME + '.models'}
-                # then add above roots
-                for root in COMPLEX_STRUCTURE['roots'][:countl + 1]:
-                    for root_entity in root:
-                        attrs[root_entity.lower()] = models.ManyToManyField(
-                            root_entity, related_name=entity.lower(),
-                            verbose_name=root_entity, blank=True
-                        )
-                # then add above nodes
-                for above_nodes in COMPLEX_STRUCTURE['nodes'][:countl]:
-                    for node_list in above_nodes:
-                        for node_entity in node_list:
-                            attrs[
-                                node_entity.lower()] = models.ManyToManyField(
-                                node_entity, related_name=entity.lower(),
-                                verbose_name=node_entity, blank=True
-                            )
-                abstract_models_data[entity] = ['cs_' + entity, attrs]
-        countl += 1
+            attrs = {'Meta': Meta, '__module__': COMPLEX_APP_NAME + '.models'}
+            # Then add above roots
+            for root in COMPLEX_STRUCTURE['roots'][:i+1]:
+                for root_entity in root:
+                    attrs[root_entity.lower()] = models.ManyToManyField(
+                        root_entity, related_name=entity.lower(),
+                        verbose_name=root_entity, blank=True)
+            # Then add above nodes
+            for above_nodes in COMPLEX_STRUCTURE['nodes'][:i]:
+                for node_entity in above_nodes:
+                    attrs[node_entity.lower()] = models.ManyToManyField(
+                        node_entity, related_name=entity.lower(),
+                        verbose_name=node_entity, blank=True)
+            abstract_models_data[entity] = ['cs_' + entity, attrs]
 
 
 def abstract_model(entity_name):
