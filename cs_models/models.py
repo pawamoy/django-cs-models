@@ -40,7 +40,7 @@ def process():
 
             attrs = {'Meta': Meta, '__module__': COMPLEX_APP_NAME + '.models'}
             # Then add above roots
-            for root in COMPLEX_STRUCTURE['roots'][:i+1]:
+            for root in COMPLEX_STRUCTURE['roots'][:i + 1]:
                 for root_entity in root:
                     attrs[root_entity.lower()] = models.ManyToManyField(
                         root_entity, related_name=entity.lower(),
