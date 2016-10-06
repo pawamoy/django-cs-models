@@ -19,4 +19,7 @@ include tox.ini .travis.yml appveyor.yml
 
 include release.sh
 
+include cs-models-diagram-abstract.dia
+include cs-models-diagram-example.dia
+
 global-exclude *.py[cod] __pycache__ *.so *.dylib release.sh

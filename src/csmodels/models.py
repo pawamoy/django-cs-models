@@ -4,12 +4,13 @@ based on the project settings. These abstract models will be linked
 between them with ManyToMany fields, from the leaves to the roots.
 """
 
+from django.conf import settings
 from django.db import models
+
 try:
     from django.apps import apps
 except ImportError:
     from django.db.models import loading as apps
-from django.conf import settings
 
 COMPLEX_STRUCTURE = getattr(settings, 'COMPLEX_STRUCTURE', None)
 COMPLEX_APP_NAME = getattr(settings, 'COMPLEX_APP_NAME', None)
