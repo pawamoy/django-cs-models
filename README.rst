@@ -8,7 +8,6 @@ Overview
 |codecov|
 |landscape|
 |version|
-|downloads|
 |wheel|
 |gitter|
 
@@ -26,10 +25,6 @@ Overview
 
 .. |version| image:: https://img.shields.io/pypi/v/django-cs-models.svg?style=flat
     :alt: PyPI Package latest release
-    :target: https://pypi.python.org/pypi/django-cs-models/
-
-.. |downloads| image:: https://img.shields.io/pypi/dm/django-cs-models.svg?style=flat
-    :alt: PyPI Package monthly downloads
     :target: https://pypi.python.org/pypi/django-cs-models/
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/django-cs-models.svg?style=flat
