@@ -120,7 +120,7 @@ but numbers (their levels) are.
 Documentation
 =============
 
-https://github.com/Pawamoy/django-cs-models.wiki
+https://github.com/Pawamoy/django-cs-models/wiki
 
 Development
 ===========
