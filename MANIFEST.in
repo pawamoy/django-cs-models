@@ -20,7 +20,6 @@ include .style.yapf
 
 include *.yml
 include runtests.py
-
 include *.dia
 
 recursive-include requirements *.txt
