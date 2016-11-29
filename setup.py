@@ -21,7 +21,8 @@ setup(
     name='django-cs-models',
     version='0.1.0',
     license='MPL 2.0',
-    description='A Django app that helps you creating models within a Complex System.',
+    description='A Django app that helps you creating models '
+                'within a Complex System.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S)
             .sub('', read('README.rst')),
@@ -44,9 +45,6 @@ setup(
         'Operating System :: POSIX',
         'Operating System :: Microsoft :: Windows',
         'Framework :: Django',
-        # 'Framework :: Django :: 1.8',
-        # 'Framework :: Django :: 1.9',
-        # 'Framework :: Django :: 1.10',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',

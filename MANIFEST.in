@@ -21,6 +21,8 @@ include .style.yapf
 include *.yml
 include runtests.py
 
+include *.dia
+
 recursive-include requirements *.txt
 
 global-exclude *.py[cod] __pycache__ *.so *.dylib release.sh update.sh

@@ -2,7 +2,7 @@
 
 from django.test import TestCase
 
-import accesscontrol
+import csmodels
 
 
 class MainTestCase(TestCase):
@@ -10,7 +10,7 @@ class MainTestCase(TestCase):
         pass
 
     def test_main(self):
-        assert accesscontrol
+        assert csmodels
 
     def tearDown(self):
         pass
