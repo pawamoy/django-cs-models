@@ -36,7 +36,7 @@ default_context:
     project_name:                    'Django Complex System Models'
     project_short_description:       'A Django app that helps you creating models within a Complex System.'
     pyup:                            'yes'
-    release_date:                    'today'
+    release_date:                    '2016-10-06'
     repo_name:                       'django-cs-models'
     requiresio:                      'no'
     scrutinizer:                     'no'
@@ -45,4 +45,3 @@ default_context:
     travis:                          'yes'
     version:                         '0.1.0'
     website:                         'http://pawamoy.github.io/'
-    year:                            'now'
