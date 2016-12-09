@@ -10,12 +10,16 @@ import csmodels
 
 
 class MainTestCase(TestCase):
-    """Main Django test case"""
+    """Main Django test case."""
+
     def setUp(self):
+        """Setup method."""
         pass
 
     def test_main(self):
+        """Main test method."""
         assert csmodels
 
     def tearDown(self):
+        """Tear down method."""
         pass
