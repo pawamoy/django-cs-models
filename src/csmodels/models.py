@@ -1,25 +1,29 @@
 # -*- coding: utf-8 -*-
-"""This module contains functions for creating and returning abstract models
+
+"""
+Models utilities.
+
+This module contains functions for creating and returning abstract models
 based on the project settings. These abstract models will be linked
 between them with ManyToMany fields, from the leaves to the roots.
 """
 
-from django.conf import settings
 from django.db import models
+
+from . import COMPLEX_APP_NAME, COMPLEX_STRUCTURE
 
 try:
     from django.apps import apps
 except ImportError:
     from django.db.models import loading as apps
 
-COMPLEX_STRUCTURE = getattr(settings, 'COMPLEX_STRUCTURE', None)
-COMPLEX_APP_NAME = getattr(settings, 'COMPLEX_APP_NAME', None)
 
 abstract_models = {}
 abstract_models_data = {}
 
 
 def process():
+    """Method to compute the abstract models dynamically."""
     if not (COMPLEX_STRUCTURE or COMPLEX_APP_NAME):
         raise ValueError(
             'COMPLEX_STRUCTURE or COMPLEX_APP_NAME is not set.')
@@ -56,6 +60,15 @@ def process():
 
 
 def abstract_model(entity_name):
+    """
+    Get the abstract model related to the given entity.
+
+    Args:
+        entity_name (str): name of the entity/model.
+
+    Returns:
+        model: an abstract model to inherit from.
+    """
     if len(abstract_models_data) == 0:
         process()
     installed_model = abstract_models.get(entity_name, None)
@@ -74,6 +87,15 @@ def abstract_model(entity_name):
 
 
 def concrete_model(entity_name):
+    """
+    Get your concrete, hardcoded model.
+
+    Args:
+        entity_name (str): name of the entity/model.
+
+    Returns:
+        model: your concrete model.
+    """
     if len(abstract_models_data) == 0:
         process()
     return apps.get_model(COMPLEX_APP_NAME, entity_name)
