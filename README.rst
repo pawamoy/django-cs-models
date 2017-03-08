@@ -22,8 +22,8 @@ Django Complex System Models
     :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
     :alt: Codacy Code Quality Status
 
-.. |pyup| image:: https://pyup.io/account/repos/github/pawamoy/django-cs-models/shield.svg
-    :target: https://pyup.io/account/repos/github/pawamoy/django-cs-models/
+.. |pyup| image:: https://pyup.io/repos/github/Pawamoy/django-cs-models/shield.svg
+    :target: https://pyup.io/repos/github/Pawamoy/django-cs-models/
     :alt: Updates
 
 .. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
