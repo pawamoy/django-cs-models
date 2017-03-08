@@ -7,7 +7,7 @@ Django Complex System Models
 
 
 |travis|
-|codecov|
+|codacy|
 |landscape|
 |version|
 |wheel|
@@ -19,16 +19,16 @@ Django Complex System Models
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/Pawamoy/django-cs-models/
 
-.. |codecov| image:: https://codecov.io/github/Pawamoy/django-cs-models/coverage.svg?branch=master
-    :alt: Coverage Status
-    :target: https://codecov.io/github/Pawamoy/django-cs-models/
-
 .. |landscape| image:: https://landscape.io/github/Pawamoy/django-cs-models/master/landscape.svg?style=flat
     :target: https://landscape.io/github/Pawamoy/django-cs-models/
     :alt: Code Quality Status
 
-.. |pyup| image:: https://pyup.io/repos/github/pawamoy/django-cs-models/shield.svg
-    :target: https://pyup.io/repos/github/pawamoy/django-cs-models/
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/REPLACE_WITH_PROJECT_ID
+    :target: https://www.codacy.com/app/Pawamoy/django-cs-models/
+    :alt: Codacy Code Quality Status
+
+.. |pyup| image:: https://pyup.io/account/repos/github/pawamoy/django-cs-models/shield.svg
+    :target: https://pyup.io/account/repos/github/pawamoy/django-cs-models/
     :alt: Updates
 
 .. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
@@ -53,7 +53,7 @@ License
 
 Software licensed under `ISC`_ license.
 
-.. _ISC : https://www.isc.org/downloads/software-support-policy/isc-license/
+.. _ISC: https://www.isc.org/downloads/software-support-policy/isc-license/
 
 Installation
 ============
