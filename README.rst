@@ -27,7 +27,6 @@ Django Complex System Models
     :target: https://landscape.io/github/Pawamoy/django-cs-models/
     :alt: Code Quality Status
 
-
 .. |pyup| image:: https://pyup.io/repos/github/pawamoy/django-cs-models/shield.svg
     :target: https://pyup.io/repos/github/pawamoy/django-cs-models/
     :alt: Updates
@@ -66,7 +65,8 @@ Installation
 Documentation
 =============
 
-https://github.com/Pawamoy/django-cs-models/wiki
+http://django-cs-models.readthedocs.io/en/latest/
+
 
 Development
 ===========
