@@ -18,8 +18,8 @@ Django Complex System Models
     :alt: Travis-CI Build Status
     :target: https://travis-ci.org/Pawamoy/django-cs-models/
 
-.. |codacy| image:: https://api.codacy.com/project/badge/Grade/REPLACE_WITH_PROJECT_ID
-    :target: https://www.codacy.com/app/Pawamoy/django-cs-models/
+.. |codacy| image:: https://api.codacy.com/project/badge/Grade/a2a78bf43f1c439982f955a00e0e46de
+    :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
     :alt: Codacy Code Quality Status
 
 .. |pyup| image:: https://pyup.io/account/repos/github/pawamoy/django-cs-models/shield.svg
