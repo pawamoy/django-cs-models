@@ -7,7 +7,8 @@ Django Complex System Models
 
 
 |travis|
-|codacy|
+|codacygrade|
+|codacycoverage|
 |version|
 |wheel|
 |pyup|
@@ -15,28 +16,32 @@ Django Complex System Models
 
 
 .. |travis| image:: https://travis-ci.org/Pawamoy/django-cs-models.svg?branch=master
-    :alt: Travis-CI Build Status
     :target: https://travis-ci.org/Pawamoy/django-cs-models/
+    :alt: Travis-CI Build Status
 
-.. |codacy| image:: https://api.codacy.com/project/badge/Grade/a2a78bf43f1c439982f955a00e0e46de
+.. |codacygrade| image:: https://api.codacy.com/project/badge/Grade/a2a78bf43f1c439982f955a00e0e46de
     :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
     :alt: Codacy Code Quality Status
+
+.. |codacycoverage| image:: https://api.codacy.com/project/badge/Coverage/a2a78bf43f1c439982f955a00e0e46de
+    :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
+    :alt: Codacy Code Coverage
 
 .. |pyup| image:: https://pyup.io/repos/github/Pawamoy/django-cs-models/shield.svg
     :target: https://pyup.io/repos/github/Pawamoy/django-cs-models/
     :alt: Updates
 
 .. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
+    :target: https://gitter.im/Pawamoy/django-cs-models
     :alt: Join the chat at https://gitter.im/Pawamoy/django-cs-models
-    :target: https://gitter.im/Pawamoy/django-cs-models?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 
 .. |version| image:: https://img.shields.io/pypi/v/django-cs-models.svg?style=flat
-    :alt: PyPI Package latest release
     :target: https://pypi.python.org/pypi/django-cs-models/
+    :alt: PyPI Package latest release
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/django-cs-models.svg?style=flat
-    :alt: PyPI Wheel
     :target: https://pypi.python.org/pypi/django-cs-models/
+    :alt: PyPI Wheel
 
 
 .. end-badges
