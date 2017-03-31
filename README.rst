@@ -5,7 +5,6 @@ Django Complex System Models
 .. start-badges
 
 
-
 |travis|
 |codacygrade|
 |codacycoverage|
@@ -31,10 +30,6 @@ Django Complex System Models
     :target: https://pyup.io/repos/github/Pawamoy/django-cs-models/
     :alt: Updates
 
-.. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
-    :target: https://gitter.im/Pawamoy/django-cs-models
-    :alt: Join the chat at https://gitter.im/Pawamoy/django-cs-models
-
 .. |version| image:: https://img.shields.io/pypi/v/django-cs-models.svg?style=flat
     :target: https://pypi.python.org/pypi/django-cs-models/
     :alt: PyPI Package latest release
@@ -42,6 +37,11 @@ Django Complex System Models
 .. |wheel| image:: https://img.shields.io/pypi/wheel/django-cs-models.svg?style=flat
     :target: https://pypi.python.org/pypi/django-cs-models/
     :alt: PyPI Wheel
+
+.. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
+    :target: https://gitter.im/Pawamoy/django-cs-models
+    :alt: Join the chat at https://gitter.im/Pawamoy/django-cs-models
+
 
 
 .. end-badges
@@ -65,8 +65,9 @@ Installation
 Documentation
 =============
 
-http://django-cs-models.readthedocs.io/en/latest/
+`On ReadTheDocs`_
 
+.. _`On ReadTheDocs`: http://django-cs-models.readthedocs.io/
 
 Development
 ===========
