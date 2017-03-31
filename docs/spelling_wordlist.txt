@@ -14,9 +14,11 @@ django-cs-models
 django-cs-models
 csmodels
 Pawamoy
-Django
-Complex
-System
-Models
+django
+complex
+system
+models
 Timothee
 Mazzucotelli
+Django
+django

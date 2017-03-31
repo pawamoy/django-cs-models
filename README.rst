@@ -7,8 +7,8 @@ Django Complex System Models
 
 
 |travis|
-|codacy-grade|
-|codacy-coverage|
+|codacygrade|
+|codacycoverage|
 |version|
 |wheel|
 |pyup|
@@ -19,20 +19,17 @@ Django Complex System Models
     :target: https://travis-ci.org/Pawamoy/django-cs-models/
     :alt: Travis-CI Build Status
 
-.. |codacy-grade| image:: https://api.codacy.com/project/badge/Grade/REPLACE_WITH_PROJECT_ID
+.. |codacygrade| image:: https://api.codacy.com/project/badge/Grade/REPLACE_WITH_PROJECT_ID
     :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
     :alt: Codacy Code Quality Status
-.. |codacy-coverage| image:: https://api.codacy.com/project/badge/Coverage/338f6c7d06664cae86d66eb289a5e424
+
+.. |codacycoverage| image:: https://api.codacy.com/project/badge/Coverage/REPLACE_WITH_PROJECT_ID
     :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
     :alt: Codacy Code Coverage
 
 .. |pyup| image:: https://pyup.io/repos/github/Pawamoy/django-cs-models/shield.svg
     :target: https://pyup.io/repos/github/Pawamoy/django-cs-models/
     :alt: Updates
-
-.. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
-    :target: https://gitter.im/Pawamoy/django-cs-models
-    :alt: Join the chat at https://gitter.im/Pawamoy/django-cs-models
 
 .. |version| image:: https://img.shields.io/pypi/v/django-cs-models.svg?style=flat
     :target: https://pypi.python.org/pypi/django-cs-models/
@@ -41,6 +38,11 @@ Django Complex System Models
 .. |wheel| image:: https://img.shields.io/pypi/wheel/django-cs-models.svg?style=flat
     :target: https://pypi.python.org/pypi/django-cs-models/
     :alt: PyPI Wheel
+
+.. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
+    :target: https://gitter.im/Pawamoy/django-cs-models
+    :alt: Join the chat at https://gitter.im/Pawamoy/django-cs-models
+
 
 
 .. end-badges
@@ -64,8 +66,9 @@ Installation
 Documentation
 =============
 
-http://django-cs-models.readthedocs.io/en/latest/
+`On ReadTheDocs`_
 
+.. _`On ReadTheDocs`: http://django-cs-models.readthedocs.io/
 
 Development
 ===========
