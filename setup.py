@@ -34,10 +34,10 @@ setup(
                 'within a Complex System.',
     long_description='%s\n%s' % (
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S)
-            .sub('', read('README.rst')),
+        .sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst'))
     ),
-    author='Timothee Mazzucotelli',
+    author=u'Timothee Mazzucotelli',
     author_email='timothee.mazzucotelli@gmail.com',
     url='https://github.com/Pawamoy/django-cs-models',
     packages=find_packages('src'),
@@ -51,8 +51,6 @@ setup(
         'Intended Audience :: Developers',
         'License :: OSI Approved :: ISC License (ISCL)',
         'Operating System :: Unix',
-        'Operating System :: POSIX',
-        'Operating System :: Microsoft :: Windows',
         'Framework :: Django',
         # 'Framework :: Django :: 1.8',
         # 'Framework :: Django :: 1.9',
