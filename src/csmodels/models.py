@@ -22,6 +22,7 @@ abstract_models = {}
 abstract_models_data = {}
 
 
+# pylama:ignore=C0111,E0102
 def process():
     """Method to compute the abstract models dynamically."""
     if not (COMPLEX_STRUCTURE or COMPLEX_APP_NAME):
@@ -69,7 +70,7 @@ def abstract_model(entity_name):
     Returns:
         model: an abstract model to inherit from.
     """
-    if len(abstract_models_data) == 0:
+    if not abstract_models_data:
         process()
     installed_model = abstract_models.get(entity_name, None)
     if installed_model is None:
@@ -96,6 +97,6 @@ def concrete_model(entity_name):
     Returns:
         model: your concrete model.
     """
-    if len(abstract_models_data) == 0:
+    if not abstract_models_data:
         process()
     return apps.get_model(COMPLEX_APP_NAME, entity_name)
