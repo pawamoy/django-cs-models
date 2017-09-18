@@ -50,8 +50,8 @@ version = release = u'0.1.0'
 pygments_style = 'trac'
 templates_path = ['.']
 extlinks = {
-    'issue': ('https://github.com/Pawamoy/django-cs-models/issues/%s', '#'),
-    'pr': ('https://github.com/Pawamoy/django-cs-models/pull/%s', 'PR #'),
+    'issue': ('https://github.com/Genida/django-cs-models/issues/%s', '#'),
+    'pr': ('https://github.com/Genida/django-cs-models/pull/%s', 'PR #'),
 }
 
 # on_rtd is whether we are on readthedocs.org

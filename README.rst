@@ -14,20 +14,20 @@ Django Complex System Models
 |gitter|
 
 
-.. |travis| image:: https://travis-ci.org/Pawamoy/django-cs-models.svg?branch=master
-    :target: https://travis-ci.org/Pawamoy/django-cs-models/
+.. |travis| image:: https://travis-ci.org/Genida/django-cs-models.svg?branch=master
+    :target: https://travis-ci.org/Genida/django-cs-models/
     :alt: Travis-CI Build Status
 
 .. |codacygrade| image:: https://api.codacy.com/project/badge/Grade/a2a78bf43f1c439982f955a00e0e46de
-    :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
+    :target: https://www.codacy.com/app/Genida/django-cs-models/dashboard
     :alt: Codacy Code Quality Status
 
 .. |codacycoverage| image:: https://api.codacy.com/project/badge/Coverage/a2a78bf43f1c439982f955a00e0e46de
-    :target: https://www.codacy.com/app/Pawamoy/django-cs-models/dashboard
+    :target: https://www.codacy.com/app/Genida/django-cs-models/dashboard
     :alt: Codacy Code Coverage
 
-.. |pyup| image:: https://pyup.io/repos/github/Pawamoy/django-cs-models/shield.svg
-    :target: https://pyup.io/repos/github/Pawamoy/django-cs-models/
+.. |pyup| image:: https://pyup.io/repos/github/Genida/django-cs-models/shield.svg
+    :target: https://pyup.io/repos/github/Genida/django-cs-models/
     :alt: Updates
 
 .. |version| image:: https://img.shields.io/pypi/v/django-cs-models.svg?style=flat
@@ -38,9 +38,9 @@ Django Complex System Models
     :target: https://pypi.python.org/pypi/django-cs-models/
     :alt: PyPI Wheel
 
-.. |gitter| image:: https://badges.gitter.im/Pawamoy/django-cs-models.svg
-    :target: https://gitter.im/Pawamoy/django-cs-models
-    :alt: Join the chat at https://gitter.im/Pawamoy/django-cs-models
+.. |gitter| image:: https://badges.gitter.im/Genida/django-cs-models.svg
+    :target: https://gitter.im/Genida/django-cs-models
+    :alt: Join the chat at https://gitter.im/Genida/django-cs-models
 
 
 
