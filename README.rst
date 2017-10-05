@@ -31,11 +31,11 @@ Django Complex System Models
     :alt: Updates
 
 .. |version| image:: https://img.shields.io/pypi/v/django-cs-models.svg?style=flat
-    :target: https://pypi.python.org/pypi/django-cs-models/
+    :target: https://pypi.org/project/django-cs-models/
     :alt: PyPI Package latest release
 
 .. |wheel| image:: https://img.shields.io/pypi/wheel/django-cs-models.svg?style=flat
-    :target: https://pypi.python.org/pypi/django-cs-models/
+    :target: https://pypi.org/project/django-cs-models/
     :alt: PyPI Wheel
 
 .. |gitter| image:: https://badges.gitter.im/Genida/django-cs-models.svg
